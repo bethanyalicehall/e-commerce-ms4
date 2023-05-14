@@ -2,13 +2,51 @@ html {
     height: 100%;
 }
 
-body {
-    background: url() no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+
+.hero-container {
+    min-height: 50rem;
+    height: 90vh;
 }
+
+.hero-col-left {
+    height: 50%;
+    background: url('/media/test-plant.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-col-right {
+    height: 50%;
+    background: url('/media/test-plant.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-overlay {
+    min-height: 50rem;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(53, 52, 52, 0.15);
+}
+
+.hero-col-right h1 {
+    transform: translateY(-50%);
+    margin-bottom: 15%;
+    color: #EDEDE9;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.hero-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 /* from Bulma */
 .icon {
