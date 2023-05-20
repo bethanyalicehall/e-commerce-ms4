@@ -1,32 +1,25 @@
 html {
     height: 100%;
+
 }
 
 #hero1 {
-    background-image: url('/media/test-plant.jpeg');
-    height: 400px;
-  
+    background-image: url('/media/hero-plant.jpg')  ;
+    height: 100vh;
+    background-position: center;
 }
 
-#hero2 {
-    background-image: url('/media/test-plant.jpeg');
-    height: 400px;
-  
-}
 
-#hero1 .text-box {
-   
-    color: green;
+#hero1 span {
     
-  
-}
-
-#hero1 h1 {
-    text-align: right !important;
+    color: green;
 }
 
 
 
+body {
+    background-color: #FDFFF4 !important;
+}
 
 /* from Bulma */
 .icon {
@@ -98,10 +91,7 @@ html {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 0px;
     }
 
-    .hero-container {
- 
-    }
 }
