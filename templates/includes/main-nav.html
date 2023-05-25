@@ -5,9 +5,9 @@
                 Shop All
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">Shop All</a>
             </div>
         </li>
@@ -17,10 +17,10 @@
                 House plants
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Most popular</a>
-                <a href="" class="dropdown-item">Easy to care for</a>
-                <a href="" class="dropdown-item">Rare plants</a>
-                <a href="" class="dropdown-item">All Plants</a>
+                <a href="{% url 'products' %}?category=best_sellers" class="dropdown-item">Best Sellers</a>
+                <a href="{% url 'products' %}?category=easy_care" class="dropdown-item">Easy to look after</a>
+                <a href="{% url 'products' %}?category=rare" class="dropdown-item">Rare plants</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Plants</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Tools and accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Watering cans &amp; sprays</a>
-                <a href="" class="dropdown-item">Tools</a>
-                <a href="" class="dropdown-item">Plant pots</a>
-                <a href="" class="dropdown-item">All Tools and Accessories</a>
+                <a href="{% url 'products' %}?category=watering_cans_etc" class="dropdown-item">Watering cans &amp; sprays</a>
+                <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools</a>
+                <a href="{% url 'products' %}?category=plant_pots" class="dropdown-item">Plant pots</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Tools and Accessories</a>
             </div>
         </li>
 
