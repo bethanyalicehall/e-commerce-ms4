@@ -5,10 +5,10 @@
                 Shop All
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item">By Name</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item">All Products A-Z</a>
             </div>
         </li>
 
@@ -20,7 +20,7 @@
                 <a href="{% url 'products' %}?category=best_sellers" class="dropdown-item">Best Sellers</a>
                 <a href="{% url 'products' %}?category=easy_care" class="dropdown-item">Easy to look after</a>
                 <a href="{% url 'products' %}?category=rare" class="dropdown-item">Rare plants</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Plants</a>
+                <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item">All Plants</a>
             </div>
         </li>
 
