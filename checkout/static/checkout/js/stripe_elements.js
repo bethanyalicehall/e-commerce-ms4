@@ -48,7 +48,6 @@ card.addEventListener('change', function (event) {
 var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
-    // Prevents resubmission of card details
     ev.preventDefault();
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
@@ -58,7 +57,6 @@ form.addEventListener('submit', function(ev) {
         }
     }).then(function(result) {
         if (result.error) {
-            // Shows specific error message to user
             var errorDiv = document.getElementById('card-errors');
             var html = `
                 <span class="icon" role="alert">
