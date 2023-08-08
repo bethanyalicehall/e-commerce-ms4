@@ -4,9 +4,7 @@ html {
 }
 
 #hero1 {
-    background-image: url('/media/hero-plant.jpg')  ;
-    height: 100vh;
-    background-position: center;
+
 }
 
 
@@ -18,7 +16,9 @@ html {
 
 
 body {
-    background-color: #FDFFF4 !important;
+    background-image: url('/media/hero-plant.jpg')  ;
+    height: 100vh;
+    background-position: center;
 }
 
 /* from Bulma */
@@ -102,7 +102,7 @@ a.category-badge > span.badge:hover {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; 
     border: 1px solid black;
 }
 
@@ -200,7 +200,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 0px;
+        padding-top: 164px;
     }
 
 }
