@@ -22,7 +22,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+    color: #617a66;
 }
 
 .fieldset-label {
@@ -43,7 +43,7 @@ select option {
 
 select:invalid,
 select option[value=""] {
-    color: #aab7c4 !important;
+    color: #617a66 !important;
 }
 
 #loading-overlay {
