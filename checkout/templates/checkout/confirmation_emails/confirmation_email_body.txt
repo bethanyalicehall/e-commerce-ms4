@@ -1,0 +1,24 @@
+Hello {{ order.full_name }}!
+
+Thank you for your order from Monstera & More! 
+
+Your order information:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }}, {{ order.town_or_city }}, {{ order.country }}.
+
+The contact number we have for you is {{ order.phone_number }}. If this is incorrect you can update this on your profile page.
+
+Contact us at {{ contact_email }} if you have any queries about your order
+
+Thanks again for your purchase with us!
+
+
+
+Monstera & More
