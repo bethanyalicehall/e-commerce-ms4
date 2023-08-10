@@ -9,7 +9,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?sort=date_created&direction=desc" class="dropdown-item ">New In!</a>
+                <a href="{% url 'products' %}?sort=date_created&direction=desc" class="dropdown-item ">By Newest First</a>
 
             </div>
         </li>
@@ -28,11 +28,11 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tools and accessories
+                Plant Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=watering_cans_etc" class="dropdown-item">Watering cans &amp; sprays</a>
-                <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools</a>
+                <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools and accessories</a>
                 <a href="{% url 'products' %}?category=plant_pots" class="dropdown-item">Plant pots</a>
                 <a href="{% url 'products' %}?category=watering_cans_etc,tools,plant_pots" class="dropdown-item">All Tools and Accessories</a>
 
