@@ -121,6 +121,7 @@ def edit_product(request, product_id):
     context = {
         'form': form,
         'product': product,
+        'on_profile_page': True,
     }
 
     return render(request, template, context)
