@@ -13,12 +13,11 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6">
+    
             <hr>
-            <h2 class="logo-font mb-4">Product Management</h2>
-            <h5 class="text-muted">Add a Product</h5>
+            <h2 class="logo-font mb-4">Community blog posts</h2>
             <hr>
-        </div>
+        
     </div>
 
 
@@ -31,6 +30,8 @@
                 <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                 <p class="card-text">{{post.content|slice:":200" }}</p>
                 <a href="{% url 'post_detail' post.slug  %}" class="btn ">Read &rarr;</a>
+                <a href="{% url 'add_post' %}" class="btn ">Add &rarr;</a>
+
             </div>
         </div>
         {% endfor %}

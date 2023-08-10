@@ -21,3 +21,23 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Comment(models.Model):
+    article_id = models.ForeignKey('Post', null=True,
+                                   related_name="comments", blank=True,
+                                   on_delete=models.SET_NULL)
+    user_id = models.ForeignKey(User, null=True,
+                                blank=True, on_delete=models.SET_NULL)
+    comment_title = models.CharField(max_length=50)
+    comment_content = models.TextField(max_length=500)
+    created_on = models.DateTimeField(auto_now_add=True,
+                                      verbose_name='comment_created_date')
+
+    class Meta:
+        ordering = ['-created_on']
+
+    def __str__(self):
+        return '{}, {}, {}'.format(self.article_id,
+                                   self.user_id,
+                                   self.comment_title)
