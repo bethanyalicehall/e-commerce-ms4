@@ -18,8 +18,10 @@ html {
 body {
     background-image: url('/media/hero-plant.jpg')  ;
     height: 100vh;
-    background-position: center;
+    background-position: 1% 1%;
 }
+
+
 
 /* from Bulma */
 .icon {
@@ -32,6 +34,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color:#073014;
 }
 
 .main-logo-link {
@@ -39,13 +42,19 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #073014;
     color: white;
     min-width: 260px;
 }
 
+.btn-outline-light {
+    color: #073014 !important;
+    border-color: #073014 !important;
+}
+
+
 .btn-black {
-    background: black;
+    background: #073014;
     color: white;
 }
 
@@ -55,20 +64,20 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #073014;
     color: white;
 }
 
 .text-black {
-    color: #000 !important;
+    color: #073014 !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #073014 !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #073014 !important;
 }
 
 .overlay {
@@ -102,14 +111,14 @@ a.category-badge > span.badge:hover {
 
 .btn-outline-black {
     background: white;
-    color: black !important; 
-    border: 1px solid black;
+    color: #073014 !important; 
+    border: 1px solid 073014;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #073014;
     color: white !important;
 }
 
@@ -196,10 +205,11 @@ input[name='q']::placeholder {
 /* Allauth form formatting */	
 .allauth-form-inner-content p {	
     margin-top: 1.5rem; /* mt-4 */	
-    color: #6c757d; /* text-secondary */	
+    color: #617a66; /* text-secondary */	
+    
 }	
 .allauth-form-inner-content input {	
-    border-color: #000;	
+    border-color: #073014;	
     border-radius: 0;	
 }	
 .allauth-form-inner-content label:not([for='id_remember']) {	
@@ -220,8 +230,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;	
     -ms-user-select: none;	
     user-select: none;	
-    background-color: #000;	
-    border: 1px solid #000;	
+    background-color: #073014;	
+    border: 1px solid #073014;	
     padding: .375rem .75rem;	
     font-size: 1rem;	
     line-height: 1.5;	
@@ -232,11 +242,11 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,	
 .allauth-form-inner-content input[type='submit']:hover {		
 	color: #fff;	
-    background-color: #222;	
-    border-color: #222;	
+    background-color: #073014;	
+    border-color: #073014;	
 }	
 .allauth-form-inner-content a {	
-	color: #17a2b8; /* text-info */	
+	color: #073014; /* text-info */	
 }	
 /* Product Form */	
 .btn-file {	
