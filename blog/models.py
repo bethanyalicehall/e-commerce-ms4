@@ -24,20 +24,20 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    article_id = models.ForeignKey('Post', null=True,
-                                   related_name="comments", blank=True,
-                                   on_delete=models.SET_NULL)
-    user_id = models.ForeignKey(User, null=True,
-                                blank=True, on_delete=models.SET_NULL)
-    comment_title = models.CharField(max_length=50)
-    comment_content = models.TextField(max_length=500)
-    created_on = models.DateTimeField(auto_now_add=True,
-                                      verbose_name='comment_created_date')
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments', default=False)
+    name = models.CharField(max_length=80, default=False)
+    email = models.EmailField(default=False)
+    body = models.TextField(null=False, blank=False, default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['created_on']
 
     def __str__(self):
-        return '{}, {}, {}'.format(self.article_id,
-                                   self.user_id,
-                                   self.comment_title)
+        return 'Comment {} by {}'.format(self.body, self.name)
+
+
+
+
+    

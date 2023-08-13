@@ -3,34 +3,82 @@
 
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+  <div class="row">
+    <div class="col"></div>
+  </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-    <div class="row">
-        <hr>
-        <h2 class="logo-font mb-4">Community blog posts</h2>
-        <hr>
-    </div>
-
-    <!-- Blog post detail-->
-    <div class="container">
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body">
-        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
-        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-        <p class="card-text ">{{ object.content | safe }}</p>
+    <hr>
+    <h2 class="logo-font mb-4">Community blog posts</h2>
+    <hr>
+  </div>
+
+  <!-- Blog post detail-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 card mb-4  mt-3 left  top">
+        <div class="card-body">
+          <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
+          <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+          <p class="card-text ">{{ post.content | safe }}</p>
+        </div>
+      </div>
+      <div class="col-md-8 card mb-4  mt-3 ">
+        <div class="card-body">
+          <!-- comments -->
+
+          <!---->
+          <h2>{{ comments.count }} Comments</h2>
+          {% for comment in comments %}
+          <div class="comments">
+            <p class="font-weight-bold">
+              {{ comment.name }}
+              <span class=" text-muted font-weight-normal">
+                {{ comment.created_on }}
+              </span>
+            </p>
+            {{ comment.body | linebreaks }}
+          </div>
+   
+          <div>
+            {% if user.is_authenticated %}
+                {% if user.name == comment.user_id %}
+                    <a href="{% url 'delete_comment' comment.id %}" class="product_delete">Delete Comment</a>
+                {% endif %}
+            {% endif %}
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-8 card mb-4  mt-3 ">
+        <div class="card-body">
+          {% if user.is_authenticated %}
+          {% if new_comment %}
+          <div class="alert alert-success" role="alert">
+            Your comment is awaiting moderation
+          </div>
+          {% else %}
+          <h3>Leave a comment</h3>
+          <form method="post" action="{% url 'post_detail' post.slug %}">
+            {{ comment_form | crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+          </form>
+          {% endif %}
+          {% else %}
+          <div class="mt-4">
+            <p>To leave a comment you must
+              <a href="{% url 'account_login' %}">log in.</a>
+            </p>
+          </div>
+          {% endif %}
+        </div>
       </div>
     </div>
-    
   </div>
-</div>
-</div>
-{% endblock %}
-
+  {% endblock %}

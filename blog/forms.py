@@ -8,7 +8,7 @@ class Form(forms.ModelForm):
         exclude = ('slug', 'created_on', 'status', 'updated_on',)
 
 
-class FormComment(forms.ModelForm):
+class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('comment_title', 'comment_content')
+        fields = ('name', 'email', 'body')
