@@ -104,7 +104,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Prefill order form with saved user details
+        # Automatically add users saved details to the form
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
