@@ -21,7 +21,7 @@ def add_post(request):
     """
     Add a new post to the blog
     """
-    # Ensures only admin can add new post
+    # A new post can only be added by admin
     if not request.user.is_superuser:
         messages.error(request,
                        'Sorry, only store owners have access to the area.')
@@ -30,7 +30,7 @@ def add_post(request):
     if request.method == 'POST':
         blog_form = Form(request.POST, request.FILES)
         if blog_form.is_valid():
-            # Create Blog object but don't save to database yet
+            # Create Blog object 
             blog = blog_form.save()
             messages.success(request, 'Successfully posted your blog.')
         else:
@@ -46,4 +46,3 @@ def add_post(request):
     }
 
     return render(request, template, context)
-
