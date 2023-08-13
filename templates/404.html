@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+    
+{% endblock %}
+
+{% block content %}
+    
+<div id="hero1" class=" bg-image rounded-3">
+    <div class="d-flex justify-content-center align-items-right h-100">
+      <div class="text-box">
+        <h1 class="mb-3">Whoops! This page does not exist</h1>
+        <a class="btn btn-outline-light btn-lg" href="{% url 'home' %}" role="button">Home Page</a>
+      </div>
+    </div>
+  </div>
+     
+{% endblock %}
