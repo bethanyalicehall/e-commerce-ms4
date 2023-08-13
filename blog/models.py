@@ -25,9 +25,11 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments', default=False)
-    name = models.CharField(max_length=80, default=False)
-    email = models.EmailField(default=False)
-    body = models.TextField(null=False, blank=False, default=False)
+    name = models.CharField(max_length=80, default="")
+    user_id = models.ForeignKey(User, null=True,
+                                blank=True, on_delete=models.SET_NULL)
+    email = models.EmailField(default="")
+    body = models.TextField(null=False, blank=False, default="")
     created_on = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=False)
 

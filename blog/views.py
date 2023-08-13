@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Post, Comment
-from .forms import CommentForm
+from .forms import Form, CommentForm
 
 
 class PostList(generic.ListView):
@@ -81,7 +81,6 @@ def delete_comment(request, comment_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
     comment = get_object_or_404(Comment, pk=comment_id)
     slug = comment.post.slug
     comment.delete()

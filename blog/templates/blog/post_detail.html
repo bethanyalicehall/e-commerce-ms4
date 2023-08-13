@@ -60,21 +60,21 @@
           {% if user.is_authenticated %}
           {% if new_comment %}
           <div class="alert alert-success" role="alert">
-            Your comment is awaiting moderation
+            Your comment has been submitted and is awaiting approval. Check back soon.
           </div>
           {% else %}
           <h3>Leave a comment</h3>
           <form method="post" action="{% url 'post_detail' post.slug %}">
             {{ comment_form | crispy }}
             {% csrf_token %}
-            <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+            <button type="submit" class="btn btn-lg">Submit</button>
           </form>
           {% endif %}
           {% else %}
           <div class="mt-4">
-            <p>To leave a comment you must
-              <a href="{% url 'account_login' %}">log in.</a>
-            </p>
+            <p>To leave a comment you must be logged in. </p>
+            <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Log in</a>
+            <a class="btn btn-outline-black rounded-0" href="{% url 'account_signup' %}">Sign up</a>
           </div>
           {% endif %}
         </div>
