@@ -1,4 +1,4 @@
-## MS4 (README DRAFT - NOT COMPLETE)
+## Monstera & More (README DRAFT - NOT COMPLETE)
 
 ![Mockup of home page on a Mac, Macbook, iPad, and iPhone]()
 
@@ -10,10 +10,11 @@
 
 **Milestone 4 project - Full Stack Frameworks with Django - Code institute**
 
-Here is some text. Here is some text. Here is some text. Here is some text. 
+Monstera & More is an e-commerce site that sells houseplants. Users can browse and purchase products, as well as sign up to become a member and leave comments on blog posts. 
 
 ### Project Focus
-Here is some text. Here is some text. Here is some text. Here is some text. 
+The goal of this project is to build a full-stack site with business logic, controlling a centrally-owned dataset. The project will have an authentication mechanism and there will be paid services/purchases available to the user.
+
 ---
 
 ## Table of Contents
@@ -60,17 +61,17 @@ User experience
 
 ### Strategy
 The following questions were asked when developing a strategy...
-- Who is the target audience, and is it culturally appropriate?
-    - The target audience is anyone who loves to dine out and either document their review of this for themselves/friends/strangers or simply browse others reviews to get inspiration for where to eat next. 
+- Who is the target audience?
+    - The target audience is anyone who likes to keep houseplants, or is interested in learning more about what houseplants could be best for them.
 - Is the technology appropriate for the user and the purpose of the website?
-    - The technology is intuitive and straightforward to allow users to quickly add and browse reviews.
+    - The technology is intuitive and straightforward to allow users to quickly browse and purchase products.
 - How is the offering of this site different from competitors?
-    - You can add a review of any restaurant in the world, even if it hasn't been reviewed before.
+    - Users can browse the 'community' section and if logged in can leave comments and interact with other users, discussing houseplant tips and more.
 
 From the above questions, the focus for the strategy will be on the following:
-- Develop a site that where the purpose is immediatley clear, and it is simple to sign up.
+- Develop a site that where it is clear what type of products are being sold, and it is simple to sign up to become a memeber.
 - Ensure the technology is straightforward and relevant to the target audience.
-- Increase return users back to the site, by displaying latest reviews so they can check in regularly to see whats new.
+- Increase return users back to the site, by having the option to view what products are most recently added, so they can see what is new easily.
 
 ---
 
