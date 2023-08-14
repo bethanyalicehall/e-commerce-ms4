@@ -77,37 +77,40 @@ From the above questions, the focus for the strategy will be on the following:
 
 ### Scope
 The scope of this website is to provide...
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-
+- Clear and user friendly navigation around the site
+- Ability for users to use secure registration and login
+- A checkout app that provides a secure payment system and email confirmation
+- A search feature to allow users to browse products
+- A blog app where users can read posts and add comments if logged in
 
 ---
 
 ### Structure
-Here is some text. Here is some text. Here is some text. Here is some text. 
 
+The website is organised by a hierarchical tree structure. This is a standard structure used commonly, and it reduces complexity. This structure can sometimes provide problems in regards to the navigation bar when displayed on mobile devices, however including the burger toggle bar, solves this.
 
-#### The structure can be broken down into:
-Users who do not have an account/ are not logged in
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-
-
-Users who are logged in
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-
+The structure can be broken down into:
+- Home page - 
+- Products pages -
+- Bag page -
+- Checkout page -
+- Community pages -
+- Product Management Pages - 
+- Login Page - 
+- Register Page - 
+- Logout Page - 
 
 ---
 
 ### Skeleton
 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
+- A base template was created to ensure the navigation bar was present on each page.
+- Bootstrap was used throughout, this aided in ensuring all content was displayed appropriately on any device.
 
 
 #### Wireframes
 
-The original wireframes differ slightly to the final layout of the website, this is because as I was developing the site naturally some changes occurred that seemed logical to improve UX.
+
 
 ![wireframeS for home page]()
 ![wireframeS for home page]()
@@ -125,15 +128,13 @@ Changes made throughout development
 
 #### Colour
 
-![Colour palette showing the following colours #39ECCE #CAFAFE #FFFFFF #FC4445 #000000](static/img/README/coolors.png)
-- #39ECCE - the background colour for nav bar and the headers of the review accordians
-- #CAFAFE - the main background colour of the whole site
-- #FFFFFF - used for some text and the background for the forms
-- #FC4445 - used for some text, icons, and for the background of the search card
-- #000000 - the text colour for most of the text throughout the website
+![Colour palette showing the following colours #39ECCE #CAFAFE #FFFFFF #FC4445 #000000](media/README/MS4.png)
+- #FFFF - the colour of the search bar
+- #FDFFF4 - the main background colour of the whole site
+- #617A66 - used for some text 
+- #073014 - used for logo, text and backgroung of some buttons
+- #000000 - used for some text
 
-A further colour was added that is not displayed on the colour palette above
-- #F19090 - this was used for the footer and for the body of the review accordians
 
 I chose these colours for the site as they are vibrant and bright, I was inspired by some of the american diner images included on the site, which feature neon lights and bright coloured signs.
 
