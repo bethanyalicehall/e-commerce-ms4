@@ -249,7 +249,7 @@ input[name='q']::placeholder {
     border-color: #073014;	
 }	
 .allauth-form-inner-content a {	
-	color: #073014; /* text-info */	
+	color: #073014 !important; /* text-info */	
 }	
 /* Product Form */	
 .btn-file {	

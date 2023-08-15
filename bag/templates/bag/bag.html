@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
+                <h2 class="logo-font mb-4">Your Bag</h2>
                 <hr>
             </div>
         </div>
@@ -29,7 +29,7 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
-                                    <th scope="col">Product Info</th>
+                                    <th scope="col">Item Information</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
@@ -99,13 +99,10 @@
                                     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Total inc. delivery: £{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-danger">
+                                        <p class="mb-1 font-italic">
                                             Spend an extra <strong>£{{ free_delivery_delta }}</strong> to get FREE delivery!
                                         </p>
                                     {% endif %}
-                                    <p class="mb-1 text-danger">
-                                        Spend an extra <strong>£</strong> to get a free gift!
-                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -127,7 +124,7 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
+                    <p class="lead mb-5">You haven't popped anything into your bag yet!</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>

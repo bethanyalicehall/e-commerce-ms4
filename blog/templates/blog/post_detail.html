@@ -12,11 +12,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-  <div class="row">
-    <hr>
-    <h2 class="logo-font mb-4">Community blog posts</h2>
-    <hr>
-  </div>
+
 
   <!-- Blog post detail-->
   <div class="container">
@@ -58,18 +54,20 @@
       <div class="col-md-8 card mb-4  mt-3 ">
         <div class="card-body">
           {% if user.is_authenticated %}
-          {% if new_comment %}
-          <div class="alert alert-success" role="alert">
-            Your comment has been submitted and is awaiting approval. Check back soon.
-          </div>
-          {% else %}
-          <h3>Leave a comment</h3>
-          <form method="post" action="{% url 'post_detail' post.slug %}">
-            {{ comment_form | crispy }}
-            {% csrf_token %}
-            <button type="submit" class="btn btn-lg">Submit</button>
-          </form>
-          {% endif %}
+            {% if new_comment %}
+              <div class="alert alert-success" role="alert">
+              Your comment has been submitted and is awaiting approval. Check back soon.
+              </div>
+            {% else %}
+              <h3>Leave a comment</h3>
+              <form method="post" action="{% url 'post_detail' post.slug %}">
+              {{ comment_form | crispy }}
+              {% csrf_token %}
+              <button class="btn btn-black rounded-0 btn-lg text-uppercase" type="submit" aria-label="Submit a comment button">Submit<span class="icon">
+                <i class="fa-solid fa-plus"></i>
+            </span></button>
+              </form>
+            {% endif %}
           {% else %}
           <div class="mt-4">
             <p>To leave a comment you must be logged in. </p>
