@@ -13,24 +13,27 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-    
             <hr>
             <h2 class="logo-font mb-4">Community blog posts</h2>
             <hr>
-        
     </div>
-
-
+    <div class="row">
+        <a href="{% url 'add_post' %}" class="btn btn-black rounded-0 btn-lg">
+            <span class="text-uppercase">Add a post!</span>
+            <span class="icon">
+                <i class="fa-solid fa-plus"></i>
+            </span>
+        </a>
+    </div>
     <!-- Blog Posts -->
     <div class="col-md-8 mt-3 left">
         {% for post in post_list %}
         <div class="card mb-4">
             <div class="card-body">
-                <h2 class="card-title text-black">{{ post.title }}</h2>
+                <h2 class="card-title text-black">{{ post.title. }}</h2>
                 <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                 <p class="card-text">{{post.content|slice:":200" }}</p>
                 <a href="{% url 'post_detail' post.slug  %}" class="btn ">Read &rarr;</a>
-                <a href="{% url 'add_post' %}" class="btn ">Add &rarr;</a>
 
             </div>
         </div>

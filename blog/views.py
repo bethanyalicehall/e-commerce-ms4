@@ -41,6 +41,7 @@ def PostDetail(request, slug):
         },
     )
 
+
 @login_required
 def add_post(request):
     """
