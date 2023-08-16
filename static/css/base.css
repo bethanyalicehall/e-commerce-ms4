@@ -327,6 +327,8 @@ input[name='q']::placeholder {
 }
 
 @media (max-width: 441px) {
-
+    .mobile-background-cream a {
+        background-color: #FDFFF4 !important;
+    }
 }
 
