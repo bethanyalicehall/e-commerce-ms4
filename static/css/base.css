@@ -302,7 +302,7 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 200px;
+        padding-top: 120px;
     }
 
     body {
@@ -312,7 +312,7 @@ input[name='q']::placeholder {
 
 @media (max-width: 441px) {
     .header-container {
-        padding-top: 300px;
+        padding-top: 200px;
     }
 
     body {
