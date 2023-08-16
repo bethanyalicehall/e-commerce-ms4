@@ -1,27 +1,66 @@
 [
     {
-        "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "bestsellers",
+            "id": "10",
+            "name": "best_sellers",
             "friendly_name": "Best Sellers"
         }
     },
+
+
     {
-        "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "cacti",
-            "friendly_name": "Cacti"
+            "id": "11",
+            "name": "easy_care",
+            "friendly_name": "Easy to look after"
         }
     },
+
     {
-        "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "succulents",
-            "friendly_name": "Succulents"
+            "id": "12",
+            "name": "rare",
+            "friendly_name": "Unusual Plants"
+        }
+    },
+
+    {
+        "model": "products.category",
+        "fields": {
+            "id": "13",
+            "name": "watering_cans_etc",
+            "friendly_name": "Watering Tools"
+        }
+    },
+
+    {
+        "model": "products.category",
+        "fields": {
+            "id": "14",
+            "name": "tools",
+            "friendly_name": "Tools and Accessories"
+        }
+    },
+
+    {
+        "model": "products.category",
+        "fields": {
+            "id": "15",
+            "name": "plant_pots",
+            "friendly_name": "Plant Pots"
+        }
+    },
+
+    {
+        "model": "products.category",
+        "fields": {
+            "id": "10",
+            "name": "best_sellers",
+            "friendly_name": "Best Sellers"
         }
     }
 
-]
+   ]

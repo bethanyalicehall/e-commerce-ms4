@@ -1,0 +1,495 @@
+[{
+        "model": "products.product",
+        "fields": {
+            "id": "176",
+            "sku": "100103",
+            "name": "Bunny Ears Cactus",
+            "description": "The scientific name - Opuntia microdasys - is a species native to Mexico. The pads of this cactus are often said to resemble bunny ears - hence the name! \nA unique addition to any home - keep away from young children though as it is spiky!",
+            "price": "10",
+            "rating": "4",
+            "image": "pexels-min-an-1076588_1.webp",
+            "category_id": "12",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "16",
+            "date_created": "2023-08-08 09:06:18.635129",
+            "in_stock": "1",
+            "price_medium": "12.5"
+        }
+    }
+
+    ,
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "178",
+            "sku": "100101",
+            "name": "Moth Orchid",
+            "description": "A Moth Orchid's flowers can last 2-6 months before dropping, one of the longest lasting blooms of any orchid!",
+            "price": "14",
+            "rating": "4.25",
+            "image": "pexels-skylar-kang-6431888_2.webp",
+            "category_id": "10",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "22",
+            "date_created": "2023-08-08 09:06:18.635129",
+            "in_stock": "1",
+            "price_medium": "18"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "179",
+            "sku": "100100",
+            "name": "Monstera Deliciosa",
+            "description": "Also known as the Swiss Cheese plant! It is native to tropical forests in southern Mexico.",
+            "price": "14",
+            "rating": "4",
+            "image": "pexels-huy-phan-3125195_1.webp",
+            "category_id": "10",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "20",
+            "date_created": "2023-08-08 09:06:18.635129",
+            "in_stock": "1",
+            "price_medium": "16"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "180",
+            "sku": "200201",
+            "name": "Watering can",
+            "description": "Excellent size",
+            "price": "12",
+            "rating": "4",
+            "image": "kaufmann-mercantile-a7Woj8W6J0s-unsplash.webp",
+            "category_id": "13",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-08 09:06:18.635129",
+            "in_stock": "0",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "181",
+            "sku": "200200",
+            "name": "Mini Tool Set",
+            "description": "This cute little tool set is perfect for any house plant fanatic!\nIt includes two mini trowels and a mini rake for all your potting needs.",
+            "price": "7",
+            "rating": "4.5",
+            "image": "pexels-cottonbro-studio-4503269.webp",
+            "category_id": "14",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-08 09:06:18.635129",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "182",
+            "sku": "100104",
+            "name": "Snake plant",
+            "description": "An unusual plant that is very hard to kill! Native to west Africa.",
+            "price": "6.5",
+            "rating": "4.8",
+            "image": "pexels-fabian-stroobants-2123482.webp",
+            "category_id": "11",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "13",
+            "date_created": "2023-08-08 09:08:36.862480",
+            "in_stock": "1",
+            "price_medium": "10"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "185",
+            "sku": "100105",
+            "name": "Chinese Money Plant",
+            "description": "The scientific name - Pilea peperomioides - is native to southern China. Other names for this plant include, UFO plant and pancake plant! \n\nTo many this plant symbolises good fortune due to the coin shaped leaves.",
+            "price": "8",
+            "rating": "4.7",
+            "image": "maarten-deckers-a7MQv3TBvOk-unsplash.webp",
+            "category_id": "10",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "14",
+            "date_created": "2023-08-09 18:30:59.564318",
+            "in_stock": "1",
+            "price_medium": "11"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "186",
+            "sku": "100106",
+            "name": "Boston Fern",
+            "description": "This plant native to the USA can grow up to 90cm",
+            "price": "6",
+            "rating": "4.2",
+            "image": "pexels-luiz-fernando-4878662.webp",
+            "category_id": "10",
+            "plant": "1",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:02:58.805009",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "187",
+            "sku": "100107",
+            "name": "Prayer Plant",
+            "description": "Native to Brazil, this plant can grow 30cm tall and wide. At night the leaves tend to fold together, giving the appearance of hands in prayer!",
+            "price": "9.5",
+            "rating": "4",
+            "image": "pexels-isra-nilgun-ozkan-7605804.webp",
+            "category_id": "12",
+            "has_sizes": "1",
+            "price_large": "15",
+            "date_created": "2023-08-10 19:06:13.892345",
+            "in_stock": "1",
+            "price_medium": "12"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "188",
+            "sku": "100108",
+            "name": "String of Hearts",
+            "description": "Getting its name from its unique appearance, String of Hearts enjoy bright indirect light.",
+            "price": "14",
+            "rating": "4.5",
+            "image": "feey-rmYAJLWdH3Q-unsplash.webp",
+            "category_id": "12",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "22",
+            "date_created": "2023-08-10 19:09:05.606319",
+            "in_stock": "1",
+            "price_medium": "18"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "189",
+            "sku": "100109",
+            "name": "Spider Plant",
+            "description": "Aptly named, the Spider Plant, or sometimes known as Spider Ivy is a great addition to your houseplant collection",
+            "price": "10",
+            "rating": "5",
+            "image": "lucian-alexe-Si8rYoK5tf0-unsplash_1.webp",
+            "category_id": "10",
+            "plant": "1",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:11:52.597413",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "190",
+            "sku": "100110",
+            "name": "Hoya Heart",
+            "description": "Hoya hearts, or the scientific name Hoya kerrii, is a species  native to the south-east of Asia. As the thick leaves are heart-shaped, the plant is sometimes named \"lucky-heart\".",
+            "price": "12",
+            "rating": "4",
+            "image": "feey-b3I7bO7Mehk-unsplash.webp",
+            "category_id": "12",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:14:13.718689",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "191",
+            "sku": "100111",
+            "name": "ZZ Plant",
+            "description": "Shortened from Zamioculcas zamiifolia, the ZZ plant is native in east Africa. They thrive in lower light conditions.",
+            "price": "9",
+            "rating": "4.6",
+            "image": "feey-1gwjE0c3PSQ-unsplash.webp",
+            "category_id": "11",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "16",
+            "date_created": "2023-08-10 19:21:18.153538",
+            "in_stock": "1",
+            "price_medium": "12"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "192",
+            "sku": "100112",
+            "name": "Fairy Castle Cactus",
+            "description": "What a great name! Although despite its pretty name it is very sharp! Native to USA and South America.",
+            "price": "9",
+            "rating": "4.8",
+            "image": "scott-webb-C6oPXOatFD8-unsplash.webp",
+            "category_id": "12",
+            "plant": "1",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:25:07.843218",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "193",
+            "sku": "200202",
+            "name": "Yellow Watering Can",
+            "description": "This stand-out piece will make a great addition to any out-there, plant lovers home. Ideal for watering your house plants.",
+            "price": "13",
+            "rating": "4",
+            "image": "feey-k3jEtUmKhJo-unsplash.webp",
+            "category_id": "13",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:27:21.930738",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "194",
+            "sku": "200203",
+            "name": "Glass Plant Mister",
+            "description": "This gorgeous plant mister is a great aid to watering plants without soaking them! This is really important for some plants as over-watering can cause rot and kill the plants off.",
+            "price": "11",
+            "rating": "4.9",
+            "image": "pexels-valeria-lazareva-10194595.webp",
+            "category_id": "13",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:29:00.240095",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "195",
+            "sku": "200204",
+            "name": "Cream Gardening Gloves",
+            "description": "An essential for any keen house-planter!",
+            "price": "10",
+            "rating": "5",
+            "image": "pexels-greta-hoffman-7728876.webp",
+            "category_id": "14",
+            "plant": "0",
+            "has_sizes": "1",
+            "price_large": "10",
+            "date_created": "2023-08-10 19:31:06.407489",
+            "in_stock": "1",
+            "price_medium": "10"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "196",
+            "sku": "100113",
+            "name": "Trio of Caladiums",
+            "description": "Three stunning and unique Caladiums",
+            "price": "18",
+            "rating": "4.4",
+            "image": "feey-Mv6Zju6Gj3k-unsplash.webp",
+            "category_id": "12",
+            "plant": "1",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:33:20.413240",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "197",
+            "sku": "200205",
+            "name": "Mixed Flower Seeds",
+            "description": "5 x packets of surprise flower seeds",
+            "price": "7",
+            "rating": "4.1",
+            "image": "micheile-henderson-r7cvEQzOBGM-unsplash.webp",
+            "category_id": "14",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:35:20.975063",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "198",
+            "sku": "200206",
+            "name": "Hanging rope pot",
+            "description": "Pink ribbed pot with terracotta rope. Can be hung to jazz up any space",
+            "price": "14",
+            "rating": "4.35",
+            "image": "gryffyn-m-OSBEqWnoDYo-unsplash.webp",
+            "category_id": "15",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:38:49.691372",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "199",
+            "sku": "200207",
+            "name": "Geometric Pot",
+            "description": "This wooden pot is ideal for succulents.",
+            "price": "17",
+            "rating": "4.2",
+            "image": "mong-bui-NznxEfw9iVI-unsplash.webp",
+            "category_id": "15",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:41:35.216226",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "200",
+            "sku": "200208",
+            "name": "Wicker Pot",
+            "description": "Minimalist design pot, that will look great with any plant",
+            "price": "8",
+            "rating": "4.8",
+            "image": "brina-blum-wATDAuB4Gto-unsplash.webp",
+            "category_id": "15",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:44:11.832067",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "201",
+            "sku": "200209",
+            "name": "Novelty Duck Pot",
+            "description": "Everyone has to have at least one novelty pot, right? This one is quack-tastic!",
+            "price": "7",
+            "rating": "4",
+            "image": "pexels-karen-laark-boshoff-7186373.webp",
+            "category_id": "15",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:46:33.084380",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "202",
+            "sku": "200210",
+            "name": "Cement Planter",
+            "description": "This cement planter is great for indoors or outdoors",
+            "price": "14",
+            "rating": "4.5",
+            "image": "pexels-peter-fazekas-12652589.webp",
+            "category_id": "15",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:47:37.818101",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "203",
+            "sku": "200211",
+            "name": "Cactus pinboard",
+            "description": "Green pinboard with a cactus theme, keep your important notes and favourite photos right next to all of your house plants!",
+            "price": "16",
+            "rating": "4.2",
+            "image": "georgia-de-lotz-1WXm4JXAo_0-unsplash.webp",
+            "category_id": "14",
+            "plant": "0",
+            "has_sizes": "0",
+            "price_large": "0",
+            "date_created": "2023-08-10 19:49:03.772455",
+            "in_stock": "1",
+            "price_medium": "0"
+        }
+    },
+    {
+        "model": "products.product",
+        "fields": {
+            "id": "206",
+            "sku": "100102",
+            "name": "Aloe Vera",
+            "description": "Aloe Vera is a succulent that is found all over the world. The gel inside the leaves is popular for its antibacterial and antioxidant properties.",
+            "price": "10",
+            "rating": "4.4",
+            "image": "pexels-ray-piedra-1478475_2.jpg",
+            "category_id": "11",
+            "plant": "1",
+            "has_sizes": "1",
+            "price_large": "16",
+            "date_created": "2023-08-13 07:16:31.164001",
+            "in_stock": "1",
+            "price_medium": "13.5"
+        }
+    }
+]
