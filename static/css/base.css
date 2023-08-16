@@ -3,22 +3,35 @@ html {
 
 }
 
-#hero1 {
-
-}
-
-
 #hero1 span {
-    
     color: green;
 }
 
-
-
 body {
-    background-image: url('/media/hero-plant.jpg')  ;
+    background-image: url('/media/hero-plant.jpg');
+    background-color: #FDFFF4;
     height: 100vh;
     background-position: 1% 1%;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #FDFFF4;
+	z-index: -1;
+}
+
+.header-cream {
+    background-color: #FDFFF4 !important;
+}
+
+
+
+.header-index {
+    background-color: transparent !important;
 }
 
 a {
@@ -83,15 +96,7 @@ a {
     background: #073014 !important;
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #FDFFF4;
-	z-index: -1;
-}
+
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
