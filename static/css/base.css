@@ -28,9 +28,7 @@ body {
     background-color: #FDFFF4 !important;
 }
 
-.mobile-ul {
-    background-color: #FDFFF4 !important;
-}
+
 
 
 .header-index {
@@ -321,3 +319,14 @@ input[name='q']::placeholder {
         height: calc(100vh - 200px);
     }
 }
+
+@media (max-width: 991px) {
+    .mobile-background-cream {
+        background-color: #FDFFF4 !important;
+    }
+}
+
+@media (max-width: 441px) {
+
+}
+
