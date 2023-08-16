@@ -17,6 +17,7 @@
         <h2 class="logo-font mb-4">Add a post</h2>
         <hr>
     </div>
+    {% if user.is_authenticated %}
     <div class="row">
         <div class="offset-1 col-10 col-lg-6">
             <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
@@ -36,6 +37,13 @@
                     </span></button>
                 </div>
             </form>
+    {% else %}
+            <div class="mt-4">
+                <p>To add a post you must be logged in. </p>
+                <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Log in</a>
+                <a class="btn btn-outline-black rounded-0" href="{% url 'account_signup' %}">Sign up</a>
+              </div>
+    {% endif %}
             <div class="mt-2">
                 <a href="{% url 'blog' %}">
                     <span class="icon">
