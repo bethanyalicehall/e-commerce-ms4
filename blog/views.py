@@ -77,10 +77,10 @@ def add_post(request):
 @login_required
 def delete_comment(request, comment_id):
     """
-    Delete a comment posted by the user
+    Delete a comment posted by a user
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Oops, only admin can do that.')
         return redirect(reverse('home'))
     comment = get_object_or_404(Comment, pk=comment_id)
     slug = comment.post.slug
@@ -90,6 +90,6 @@ def delete_comment(request, comment_id):
         del request.session['last_item']
 
     messages.success(request, 'Successfully deleted your comment.')
-    return redirect(post_view, slug)
+    return redirect(reverse('home'))
 
 
