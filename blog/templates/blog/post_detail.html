@@ -27,9 +27,13 @@
       <div class="col-md-8 card mb-4  mt-3 ">
         <div class="card-body">
           <!-- comments -->
-
-          <!---->
-          <h2>{{ comments.count }} Comments</h2>
+          {% if comments.count == 0 %}
+            <h2>No Comments</h2>
+          {% elif comments.count >= 2 %}
+            <h2>{{ comments.count }} Comments</h2>
+          {% else %}
+            <h2>{{ comments.count }} Comment</h2>
+          {% endif %}
           {% for comment in comments %}
           <div class="comments">
             <p class="font-weight-bold">
@@ -41,7 +45,7 @@
             </p>
             {{ comment.body | linebreaks }}
           </div>
-   
+          <!-- delete comment -->
           <div>
             {% if user.is_authenticated %}
                 {% if user.name == comment.user_id %}
@@ -55,11 +59,13 @@
       <div class="col-md-8 card mb-4  mt-3 ">
         <div class="card-body">
           {% if user.is_authenticated %}
+            <!-- message following comment submission -->
             {% if new_comment %}
               <div class="alert alert-success" role="alert">
               Your comment has been submitted and is awaiting approval. Check back soon.
               </div>
             {% else %}
+            <!-- comment form -->
               <h3>Leave a comment</h3>
               <form method="post" action="{% url 'post_detail' post.slug %}">
               {{ comment_form | crispy }}
