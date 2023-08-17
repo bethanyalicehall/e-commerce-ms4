@@ -40,22 +40,23 @@ User experience
 ### **User stories**
 
 ### **As a new user I want ...**
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
+- To understand what the sites purpose is immediately.
+- To be able to register to become a member, to view extra parts of the site and have the ability to leave comments on     posts
+- To easily browse products, add items to my bag, checkout securely, and receive an email confirmation of my purchase
+- To be able to search the site to see if a certain product is available.
+- To see if a particular product is out of stock 
 
 ### **As a returning user I want ...**
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
+- To have my details saved so that checkout is quicker.
+- To be able to update my details if they have changed, e.g. address
+- To be able to view my order history, so if i want to order the same product again, i know exactly which one it was.
 
 
 ### **As the site owner I want ...**
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-- Here is some text. Here is some text. Here is some text. Here is some text. 
-
-
+- To be able to add, update and delete products.
+- Provide 404 and 500 error pages to redirect users back to the homepage
+- Approve any comments or posts before they are added.
+- To attract new users and retain existing users to ultimately sell more products.
 
 ---
 
@@ -112,9 +113,9 @@ The structure can be broken down into:
 
 
 
-![wireframeS for home page]()
-![wireframeS for home page]()
-![wireframeS for home page]()
+![wireframes for home page]()
+![wireframes for home page]()
+![wireframes for home page]()
 
 
 
@@ -135,20 +136,13 @@ Changes made throughout development
 - #073014 - used for logo, text and backgroung of some buttons
 - #000000 - used for some text
 
-
-I chose these colours for the site as they are vibrant and bright, I was inspired by some of the american diner images included on the site, which feature neon lights and bright coloured signs.
+The colour theme I chose for the site reflects the whole brand of Monstera and More, house plants. I wanted to keep it fairly muted with green accents throughout.
 
 #### Imagery
 
-I wanted continuity with the main images across the site, each image is linked to an american diner and as mentioned, I think the colour scheme compliments this well.
+The background image of the home page is a monstera plant - obviously linking to the name of the site. It is not over the top however and maintains the simple style that is present across the site.
 
-Each cuisine also has an image, for which I tried to pick something that represented the specific cuisine.
-
-For the Favicon I chose a burger image, as this fits in with the american diner theme, and of course links to the purpose of the site reviewing restaurants.
-
-I reduced the opacity on the images within the parallax containers to allow the text to be more visible. The Parallax containers from materialize add some movement to the images when scrolling to make them stand out a bit further.
-
-Click [here](media-sources.md) to see details of images used throughout the site.
+Ideally I would have got all of the product images from the same photographer to have excellent continuity however I could not find someone who had a big enough range of suitable plants/plant accessories. The product images accurately fit the product it is linked to.
  
 
 #### Typography 
