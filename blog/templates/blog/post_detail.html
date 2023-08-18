@@ -47,10 +47,10 @@
           </div>
           <!-- delete comment -->
           <div>
-            {% if user.is_authenticated %}
-                {% if user.name == comment.user_id %}
+            {% if user.is_superuser %}
+                
                     <a href="{% url 'delete_comment' comment.id %}" class="product_delete">Delete Comment</a>
-                {% endif %}
+                
             {% endif %}
           </div>
           {% endfor %}

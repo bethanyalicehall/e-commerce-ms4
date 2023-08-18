@@ -79,7 +79,9 @@ def delete_comment(request, comment_id):
     """
     Delete a comment posted by a user
     """
-
+    if not request.user.is_superuser:
+        messages.error(request, 'Oops, only admin can do that.')
+        return redirect(reverse('home'))
     comment = get_object_or_404(Comment, pk=comment_id)
     slug = comment.post.slug
     comment.delete()
