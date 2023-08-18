@@ -44,32 +44,5 @@
        handleEnableDisable(itemId);
     });
 
-    //changes the price depending on the size selected
-    const selectElement = document.getElementById('id_product_size');
-    const priceText = document.getElementById('price_text')
-    const PRICE = {{product.price}};
-    const PRICE_MEDIUM = {{product.price_medium }};
-    const PRICE_LARGE = {{ product.price_large }};
-    
-
-    selectElement.addEventListener('change', function() {
-        var e = document.getElementById('id_product_size');
-        var value = e.value;
-        var text = e.options[e.selectedIndex].text;
-        let my_string = '£' 
-        if (value == 's'){
-            priceText.textContent = my_string + PRICE
-        }
-
-        if (value == 'm'){
-            priceText.textContent = my_string + PRICE_MEDIUM
-        }
-
-        if (value == 'l'){
-            priceText.textContent = my_string + PRICE_LARGE
-        }
-
-    })
-
 </script>
 
