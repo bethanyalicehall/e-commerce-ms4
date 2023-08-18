@@ -113,9 +113,15 @@ The structure can be broken down into:
 
 
 
-![wireframes for home page]()
-![wireframes for home page]()
-![wireframes for home page]()
+![wireframes for home page](media/README/wf-home.png)
+![wireframes for all products page](media/README/wf-products.png)
+![wireframes for individual products page](media/README/wf-product-details.png)
+![wireframes for bag page](media/README/wf-bag.png)
+![wireframes for checkout page](media/README/wf-checkout.png)
+![wireframes for community page](media/README/wf-community.png)
+
+
+
 
 
 
