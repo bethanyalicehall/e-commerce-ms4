@@ -17,6 +17,7 @@
             <h2 class="logo-font mb-4">Community blog posts</h2>
             <hr>
     </div>
+    {% if user.is_superuser %}
     <div class="col-md-8 mt-3 left">
         <a href="{% url 'add_post' %}" class="btn btn-black rounded-0 btn-lg">
             <span class="text-uppercase">Add a post!</span>
@@ -25,6 +26,7 @@
             </span>
         </a>
     </div>
+    {% endif %}
     <!-- Blog Posts -->
     <div class="col-md-8 mt-3 left">
         {% for post in post_list %}
