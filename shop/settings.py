@@ -67,7 +67,6 @@ MIDDLEWARE = [
     
 ]
 
-X_FRAME_OPTIONS = 'ALLOWALL'
 
 ROOT_URLCONF = 'shop.urls'
 

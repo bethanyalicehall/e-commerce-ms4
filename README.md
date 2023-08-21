@@ -1,8 +1,8 @@
 ## Monstera & More (README DRAFT - NOT COMPLETE)
 
-![Mockup of home page on a Mac, Macbook, iPad, and iPhone]()
+![Mockup of home page on a Mac, Macbook, iPad, and iPhone](media/README/mockup.png)
 
-[Link to live website]()
+[Link to live website](https://monstera-and-more-c7bad93be933.herokuapp.com/)
 
 ---
 
@@ -242,7 +242,7 @@ More custom features on the profile page, such as profile picture and "About me"
 - [GitHub](https://github.com/) - to host the repository.
 - [GitPod](https://gitpod.io) - to write the code and use GIT to commit and push to GitHub.
 - [Heroku](https://www.heroku.com/platform) - to deploy the project to a live site.
-- [MongoDB Atlas](https://www.mongodb.com/atlas/database) - used as the database platform.
+- [ElephantSQL ](https://www.elephantsql.com/) - used as the database platform.
 - [Balsamiq](https://balsamiq.com/) - used to produce the wireframes.
 - [Coolors](https://coolors.co/) - used to create a colour palette for the website.
 - [dbdiagram](https://dbdiagram.io/home) - used to create a diagram for the database schema.
@@ -254,14 +254,13 @@ More custom features on the profile page, such as profile picture and "About me"
 - [Chrome developer tools](https://developer.chrome.com/docs/devtools/) - for testing responsiveness throughout.
 
 ### Frameworks and Libraries 
-- [Materialize](https://materializecss.com/) - version 1.0.0 was used throughout. Materialize documentation was used to create the basic design of the site and allow responsiveness on all devices.
-- [Flask](https://flask.palletsprojects.com/en/2.2.x/) - a python web framework.
-- [PyMongo](https://pymongo.readthedocs.io/en/stable/) - python tool to allow interaction with MongoDB.
+- [Bootstrap](https://materializecss.com/) - version 4.4.1 was used throughout. Bootstrap documentation was used to create the basic design of the site and aid with responsiveness on all devices.
+
 - [JQuery](https://jquery.com/) - for adding interactivity to components within the site.
-- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.2.x/) - used for password security.
+
 - [Google Fonts](https://fonts.google.com/) - used to import fonts. 
 - [Font Awesome](https://fontawesome.com/) - for icons throughout the site.
-- [Image resizer](https://imageresizer.com/) - used to resize all cuisine card images to be equal in size.
+- [Image resizer](https://imageresizer.com/) - used to resize all product images to be equal in size.
 
 ---
 
@@ -310,14 +309,19 @@ Each of the above will have <code>os.environ.get</code> before the brackets.
 ## Credits 
 
 ### Media
-
+Click [here](media-sources.md) to see details of images used.
 
 ### Content
 - [Code institute boiler template](https://github.com/Code-Institute-Org/gitpod-full-template) was used.
+- [Wikipedia](https://github.com/Code-Institute-Org/gitpod-full-template) was used to help write the descriptions of each plant.
 
 
   
 ### Acknowledgements
-
+I would like to thank
+- Code institute tutors - they helped me fix various problems throughout the development of this project
+- Manu Perez college supervisor, for all of his help and guidance.
+- The photographers who publish royalty free images on Unsplash and Pexels that allowed me to use high quality imagery throughout.
+- All of the code institute team, for providing quality learning content to allow me to develop my skills to complete this project.
 
 ---
