@@ -224,9 +224,9 @@ More custom features on the profile page, such as profile picture and "About me"
 
 ---
 ## Database Schema 
-- [MongoDB Atlas](https://www.mongodb.com/atlas/database) is used for the storage of data for this site.
+- [Elephant SQL](https://www.elephantsql.com/) has been used for the storage of data for this site, it is a relational databse.
 - I used [dbdiagram](https://dbdiagram.io/home) to create a visualisation of my database schema. The database is made up four collections. 
-![Database schema](static/img/README/db-schema.png)
+![Database schema](media/README/db_schema.png)
 
 ---
 
