@@ -271,38 +271,79 @@ Click [here](testing.md) to view all testing carried out.
 
 ## Deployment
 
+### Access to this code
+1. Go to **My repositories**.
+2. Select **bethanyalicehall/memory-final**.
+3. At the top of the page click on **Code**, where **Zip files** can be downloaded locally.
+
+### Django
+1. Run <code>pip3 install 'django<4'</code> in the terminal.
+2. Then <code>django-admin startproject nameofproject</code>.
+3. The django folder will then appear in the sidebar.
+4. Ensure that <code>*.sqlite3 and *.pyc and pycache</code> are added to gitignore
+5. Enter <code>python3 manage.py runserver</code> in the terminal, and load on port 8000. The page will show a message saying 'The install worked successfully! Congratulations!'.
+6. To quite the server enter <code>CTRL + C </code> in the terminal.
+7. Migrate files <code>python3 manage.py migrate</code> 
+8. Create a superuser <code>python3 manage.py createsuperuser. Provide username, email and password.</code>
+9. To save this in the terminal enter  
+- <code>git add .</code> 
+- <code>git commit -m "Your Commit message"</code> 
+- <code>git push</code> 
+
+### Stripe
+1. Register for a Stripe account.
+2. Go to 'Developers' tab on the dashboard
+3. Go to 'API Keys' to view public and secret key.
+4. Add the STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY and STRIPE_WH_SECRET to the config vars in your Heroku settings. (See Heroku deployment steps below).
+
+### ElephantSQL
+To create a database:
+1. Go to ElephantSQL.com and select create a new instance.
+2. Name it the same name of your project.
+3. Select the region closest to you then Create Instance
+4. On the ElephantSQL dashboard, click on the database for this project
+5. Copy the database URL and paste into the config vars in Heroku. (See Heroku deployment steps below).
+
+### AWS
+1. Create a Amazon AWS account.
+2. Open S3 application and create a bucket. Select an AWS Region.
+3. Allow all public access by unticking the  'Block All Public Access' setting.
+4. In 'Properties' turn on 'Static Website Hosting' and set index.html and errors.html values.
+5. In 'Permissions', click 'Edit' on the CORS configuration.
+6. Edit 'Bucket Policy' and generate and set configuration 'Bucket Policy'.
+7. Go to 'Access Control List' and set the permission to everyone
+8. Open the IAM application and create a user group. Create a new Policy.
+9. Click on the JSON tab and import an Amazon pre-built policy - AmazonS3FullAccess.
+10. Navigate to 'Groups' and then attach the policy. Click 'Add User' and create one. Add the user to that group and download the CSV with the user's access credentials.
+11. Add the AWS code into settings.py with USE_AWS as the environment variable. 
 
 
 ### Steps taken to deploy project to Heroku
-1. Within the root directory add a Procfile and type inside this file <code>web: python app.py</code>. There must not be any blank lines or added spaces.
+1. Within the root directory add a Procfile and type inside this file <code>web: gunicorn shop.wsgi:application</code>. There must not be any blank lines or added spaces.
 2. In the command line run <code>pip3 freeze > requirements.txt</code>, this will create a file called requirements.txt.
-3. Ensure within the run.py file that debug is set to False. 
-
-![Screenshot of run.py file showing debug=False](static/img/README/debug.png)
-
+3. Ensure within the settings.py file that debug is set to False. 
 4. Add both of these files and push them to your github repository.
 4. Login or create an account on [Heroku](https://www.heroku.com/platform).
 5. Create a new app
 6. From your dashboard, click on the deploy tab and then connect the app to your GitHub repository, you can enable automatic deploys so that you do not need to manually deploy each time you make changes.
-
-![Screenshot of connecting to github in Heroku](static/img/README/heroku.png)
-
-7. Ensure that you have an env.py file set up within your root directory, this must be included within the .gitignore file as it should NOT be pushed to your repository. Within the env.py file should be the following.
+7. Within the settings on your heroku project, add the following config vars within settings.
     - <code>("IP", "0.0.0.0")</code>
     - <code>("PORT", "5000")</code>
+    - <code>("AWS_ACCESS_KEY_ID", "A UNIQUE KEY")</code>
+    - <code>("AWS_SECRET_ACCESS_KEY", "A UNIQUE KEY")</code>
+    - <code>("DATABASE_URL", "URL FROM ELEPHANTSQL")</code>
+    - <code>("HEROKU_POSTGRESQL_PURPLE_URL", "A UNIQUE KEY")</code>
     - <code>("SECRET_KEY", "A UNIQUE KEY")</code>
-    - <code>("MONGO_URI", "LINK FROM MONGODB ATLAS")</code> Make sure to add in your password for the database access (not your mongoDB login)
-    - <code>("MONGO_DBNAME", "YOUR DATABASE NAME")</code>
+    - <code>("STRIPE_PUBLIC_KEY", "A UNIQUE KEY FROM STRIPE")</code>
+    - <code>("STRIPE_SECRET_KEY", "A UNIQUE KEY FROM STRIPE")</code>
+    - <code>("STRIPE_WH_SECRET", "A UNIQUE KEY FROM STRIPE")</code>
+    - <code>("USE_AWS", "TRUE")</code>
+
 Each of the above will have <code>os.environ.get</code> before the brackets.
 8. Back in Heroku, from the dashboard click on settings. Set the config vars matching your code in the env.py file
 9. To check it is working, manually deploy the project, from the deploy page, this takes a few minutes.
 10. Click open app. 
 11. If there are any errors, view the log to identify the problem.
-
-### Access to this code
-1. Go to **My repositories**.
-2. Select **bethanyalicehall/memory-final**.
-3. At the top of the page click on **Code**, where **Zip files** can be downloaded locally.
 
 ---
 
