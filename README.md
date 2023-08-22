@@ -1,4 +1,4 @@
-## Monstera & More (README DRAFT - NOT COMPLETE)
+## Monstera & More 
 
 ![Mockup of home page on a Mac, Macbook, iPad, and iPhone](media/README/mockup.png)
 
@@ -41,14 +41,14 @@ User experience
 
 ### **As a new user I want ...**
 - To understand what the sites purpose is immediately.
-- To be able to register to become a member, to view extra parts of the site and have the ability to leave comments on     posts
+- To be able to register to become a member, giving me the ability to leave comments on posts
 - To easily browse products, add items to my bag, checkout securely, and receive an email confirmation of my purchase
 - To be able to search the site to see if a certain product is available.
 - To see if a particular product is out of stock 
 
 ### **As a returning user I want ...**
 - To have my details saved so that checkout is quicker.
-- To be able to update my details if they have changed, e.g. address
+- To be able to update my details if they have changed, e.g. address.
 - To be able to view my order history, so if i want to order the same product again, i know exactly which one it was.
 
 
@@ -92,7 +92,9 @@ The website is organised by a hierarchical tree structure. This is a standard st
 
 The structure can be broken down into:
 - Home page - 
-- Products pages -
+- Products pages 
+    - All products page - displays products, this can be narrowed down to just plants or just accessories. Also each page can be sorted by price, name, category, and date added.
+    - Individual product page - displays the product image and info, and allows users to add to their bag
 - Bag page -
 - Checkout page -
 - Community pages -
@@ -152,10 +154,10 @@ Ideally I would have got all of the product images from the same photographer to
  
 
 #### Typography 
+The font is from Google fonts
 
-- 'Bebas Neue' - cursive 
-    - Here is some text. Here is some text. Here is some text. Here is some text. 
-
+- 'Lato'  
+    - Used throughout the site. A clean, crisp font.
 
 ---
 
