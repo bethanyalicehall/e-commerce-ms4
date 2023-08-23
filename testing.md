@@ -17,14 +17,11 @@ This gave some information of the following metrics, warnings and undefined vari
 
 ![Screenshot of metrics from JSHint](media/README/js-hint.png)
 
-## PEP8 Compliant 
-I ensured that my Python code was PEP8 compliant, I used Flake8 and corrected any linting errors within the IDE. I referred to [this site](https://peps.python.org/pep-0008/) to check some rules regarding indentation.
+## Flake8 
+I ensured that my Python code was PEP8 compliant, I used Flake8 and corrected any linting errors within the IDE. I referred to [this site](https://peps.python.org/pep-0008/) to check some rules regarding indentation. For some files that I did not write myself as such, such as migration files I did not correct the errors of these. 
 
-Below are some screenshots of linting errors, mainly due to indentation errors.
+![Screenshot of Flake8 errors within the IDE](media/README/flake8.png)
 
-![Screenshot of linting errors within the IDE](static/img/README/linting1.png)
-![Screenshot of linting errors within the IDE](static/img/README/linting2.png)
-![Screenshot of linting errors within the IDE](static/img/README/linting3.png)
 
 ## Performance testing
 I utilised the [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) performance testing software.
