@@ -56,7 +56,7 @@ def add_post(request):
     if request.method == 'POST':
         blog_form = Form(request.POST, request.FILES)
         if blog_form.is_valid():
-            # Create Blog object 
+            # Create Blog object
             blog = blog_form.save()
             messages.success(request, 'Successfully posted your blog.')
         else:
@@ -91,5 +91,3 @@ def delete_comment(request, comment_id):
 
     messages.success(request, 'Successfully deleted your comment.')
     return redirect(reverse('home'))
-
-

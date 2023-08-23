@@ -27,7 +27,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'monstera-and-more-c7bad93be933.herokuapp.com', '8000-bethanyalic-ecommercems-xl58jfc9t62.ws-eu104.gitpod.io', '8000-bethanyalic-ecommercems-xl58jfc9t62.ws-eu101.gitpod.io', '8000-bethanyalic-ecommercems-6upl60xiz36.ws-eu100.gitpod.io']
+ALLOWED_HOSTS = ['localhost', 'monstera-and-more-c7bad93be933.herokuapp.com',
+                 '8000-bethanyalic-ecommercems-xl58jfc9t62.ws-eu104.gitpod.io']
 
 
 # Application definition
@@ -64,7 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
 ]
 
 
@@ -146,7 +147,7 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-   
+
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -219,7 +220,7 @@ if 'USE_AWS' in os.environ:
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'monstera-and-more'
-    AWS_S3_REGION_NAME = 'eu-west-2' 
+    AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
