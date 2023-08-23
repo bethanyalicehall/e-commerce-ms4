@@ -245,9 +245,12 @@ More custom features on the profile page, such as profile picture and "About me"
 - [GitPod](https://gitpod.io) - to write the code and use GIT to commit and push to GitHub.
 - [Heroku](https://www.heroku.com/platform) - to deploy the project to a live site.
 - [ElephantSQL ](https://www.elephantsql.com/) - used as the database platform.
+- [Stripe](https://stripe.com/gb) - To handle card payments
+- [Django Allauth](https://django-allauth.readthedocs.io/) - To handle user account management
+- [AWS](https://aws.amazon.com/) - To store static and media files
 - [Balsamiq](https://balsamiq.com/) - used to produce the wireframes.
-- [Coolors](https://coolors.co/) - used to create a colour palette for the website.
 - [dbdiagram](https://dbdiagram.io/home) - used to create a diagram for the database schema.
+- [Coolors](https://coolors.co/) - used to create a colour palette for the website.
 - [Techsini](https://techsini.com/multi-mockup/index.php) - used to create the multi device mockup.
 - [W3C HTML Validation service](https://validator.w3.org/) - used to validate HTML
 - [W3C Jigsaw CSS Validation service](https://jigsaw.w3.org/css-validator/) - used to validate CSS
@@ -257,9 +260,8 @@ More custom features on the profile page, such as profile picture and "About me"
 
 ### Frameworks and Libraries 
 - [Bootstrap](https://materializecss.com/) - version 4.4.1 was used throughout. Bootstrap documentation was used to create the basic design of the site and aid with responsiveness on all devices.
-
+- [Django](https://www.djangoproject.com/) - a high-level Python web framework that encourages rapid development and clean, pragmatic design.
 - [JQuery](https://jquery.com/) - for adding interactivity to components within the site.
-
 - [Google Fonts](https://fonts.google.com/) - used to import fonts. 
 - [Font Awesome](https://fontawesome.com/) - for icons throughout the site.
 - [Image resizer](https://imageresizer.com/) - used to resize all product images to be equal in size.
