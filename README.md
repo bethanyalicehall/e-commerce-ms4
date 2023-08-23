@@ -202,17 +202,15 @@ A custom 500 error page was added, including a link to redirect back to the home
 
 ### Future features to consider
 
-#### Image upload
-The ability for users to upload and attach images to their reviews, this would add value to each review, as photos could include the food, the drinks, the exterior, the interior, the menu or the receipt.
+#### Community 
+The ability to attach images to blog posts and comments. Also for users to be able to delete their own comments, but obviously not others, as currently only the admin can delete comments. 
 
-#### Recently deleted folder
-To further add to the defensive programming, when a user deletes a review, instead of erasing from the database, a condition could be met, which then moved the review to a different page.
+#### Favourites
+A great addition to the site would be for the user to be able to 'favourite' products and then they could review their favourites and move any products they want to purchase into their bag.
 
-#### Links to Google maps 
-An option to add a google maps link to the review so users can find the location of the restaurant more easily.
+#### Automatic Stock Status
+Keep track of the exact number of stock of each item, this would allow a function where a product was purchased, the stock would be decremented by 1, and then the out of stock message would automatically display for the user. In addition to this when stock is below 5 items, a message could be displayed such as "Hurry they are almost gone!". 
 
-#### Profile page
-More custom features on the profile page, such as profile picture and "About me" information such as "Favourite cuisine" or "Number of reviews", they could earn rewards for reaching certain levels of reviews, e.g 25 reviews = Bronze medal, 50 reviews = Silver medal, 100 reviews = Gold medal. Also being able to then search for other users profiles to view this information.
 
 ---
 ## Database Schema 
