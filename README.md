@@ -346,7 +346,11 @@ Click [here](media-sources.md) to see details of images used.
 
 ### Content
 - [Code institute boiler template](https://github.com/Code-Institute-Org/gitpod-full-template) was used.
+- [Code institute - Boutique ado project]() - After following through the Boutique Ado project, a lot of the code for the products, bag and checkout app was taken from this project and edited to fit my own site. 
+- [Django Central - building a blog app](https://djangocentral.com/building-a-blog-application-with-django/) - I followed through this and used the code to help me build my blog app, it was edited slightly to fit best with my site.
+- [Django Central - creating a comments system](https://djangocentral.com/creating-comments-system-with-django/) - Utilized this to help build the comments model within my blog app. 
 - [Wikipedia](https://github.com/Code-Institute-Org/gitpod-full-template) was used to help write the descriptions of each plant.
+- For each blog post, the reference is included at the bottom of the post itself.
 
 
   
