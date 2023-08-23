@@ -41,8 +41,8 @@ User experience
 
 ### **As a new user I want ...**
 - To understand what the sites purpose is immediately.
-- To be able to register to become a member, giving me the ability to leave comments on posts
-- To easily browse products, add items to my bag, checkout securely, and receive an email confirmation of my purchase
+- To be able to register to become a member, giving me the ability to leave comments on posts and save my delivery information.
+- To easily browse products, add items to my bag, checkout securely, and receive an email confirmation of my purchase.
 - To be able to search the site to see if a certain product is available.
 - To see if a particular product is out of stock 
 
@@ -51,10 +51,9 @@ User experience
 - To be able to update my details if they have changed, e.g. address.
 - To be able to view my order history, so if i want to order the same product again, i know exactly which one it was.
 
-
 ### **As the site owner I want ...**
 - To be able to add, update and delete products.
-- Provide 404 and 500 error pages to redirect users back to the homepage
+- Provide 404 and 500 error pages to redirect users back to the homepage.
 - Approve any comments or posts before they are added.
 - To attract new users and retain existing users to ultimately sell more products.
 
@@ -91,17 +90,18 @@ The scope of this website is to provide...
 The website is organised by a hierarchical tree structure. This is a standard structure used commonly, and it reduces complexity. This structure can sometimes provide problems in regards to the navigation bar when displayed on mobile devices, however including the burger toggle bar, solves this.
 
 The structure can be broken down into:
-- Home page - 
+- Base - each page features a navigation bar which has links to the whole site, the logo of the site and a search bar.
+- Home page - Features a large image with a title and a link to explore the products of the site.
 - Products pages 
     - All products page - displays products, this can be narrowed down to just plants or just accessories. Also each page can be sorted by price, name, category, and date added.
     - Individual product page - displays the product image and info, and allows users to add to their bag
-- Bag page -
-- Checkout page -
-- Community pages -
-- Product Management Pages - 
-- Login Page - 
-- Register Page - 
-- Logout Page - 
+- Bag page - This displays any products that have been added to the users bag. They can delete or edit the quantity of each item. The subtotal, delivery cost and grand total is displayed. There is a link to progress to the checkout.
+- Checkout page - A form is displayed for the users details and delivery detais, if they are logged in and have updated their details this will be pre-filled out for them. There is also a form input for card details. On the right hand side there is a summary of what they are ordering. While the checkout is processing a green overlay and a loading symbol will show, followed by a success page where their order summary will be displayed.
+- Community pages - All of the blog posts are displayed on one page, to read the full blog post however a user must click on 'read'. This will load the full blog post and display any comments that have been made on this post. If a user is logged in they can add a comment. 
+- Product Management Pages - An admin can view this to add a new product, which will load a form with all the necessary fields. An admin can also edit or delete a product from clicking on the link next to the individual products.
+- Login Page - A user can login with their username and password. A success message will be displayed if succesful, if password or username is incorrect a message to explain this will be displayed.
+- Logout Page - When a user clicks to logout, a page will load asking if they are sure they want to logout and two buttons will be displayed to choose from. A success message will be displayed when succesfully logged out.
+- Register Page - A form is displayed containing the following fields; email address, email address confirmation, username, password, and password confirmation. An email will then be sent to the user with a link to follow to confirm the email address. Once this has been clicked the user can then log back in with those details. 
 
 ---
 

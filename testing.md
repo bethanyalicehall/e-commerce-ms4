@@ -1,24 +1,24 @@
 # Testing
 
 ## HTML validator
-I inputted my HTML into the W3C Markup Validation service. I put each page through this. A few errors did appear on each page, mostly due to Jinja templating. An example is shown below
+I inputted my HTML into the W3C Markup Validation service. The only error that came up initially was to remove the type attribute for the JavaScript script tags. 
 
-![Screenshot of HTML validation results](static/img/README/html.png)
+![Screenshot of HTML validation results](media/README/html-validation.png)
 
 ## CSS validator
 I inputted code into the W3C validation service and no errors were found
 
-![Screenshot of CSS validation results stating that no errors were found](static/img/README/css.png)
+![Screenshot of CSS validation results stating that no errors were found](media/README/css-validation.png)
 
 ## JS validator
 
 I used [JSHint](https://jshint.com/).
-This gave some information of the following metrics, warnings and undefined variables. The undefined variable is the $ sign, this was due to the use of JQuery. The warnings do not directly impact the functioning of the site or cause a console error.
+This gave some information of the following metrics, warnings and undefined variables. The warnings do not directly impact the functioning of the site or cause a console error.
 
-![Screenshot of metrics from JSHint](static/img/README/jshint.png)
+![Screenshot of metrics from JSHint](media/README/js-hint.png)
 
 ## PEP8 Compliant 
-I ensured that my Python code was PEP8 compliant, I corrected any linting errors within the IDE. I referred to [this site](https://peps.python.org/pep-0008/) to check some rules regarding indentation.
+I ensured that my Python code was PEP8 compliant, I used Flake8 and corrected any linting errors within the IDE. I referred to [this site](https://peps.python.org/pep-0008/) to check some rules regarding indentation.
 
 Below are some screenshots of linting errors, mainly due to indentation errors.
 
@@ -31,13 +31,19 @@ I utilised the [Lighthouse](https://developer.chrome.com/docs/lighthouse/overvie
 - The results of the lighthouse testing can be seen below. 
 
 ### Home page
-![Screenshot of Lighthouse testing for home page](static/img/README/lighthouse1.png)
+![Screenshot of Lighthouse testing for home page](media/README/home-lh.png)
 
-### Profile page
-![Screenshot of Lighthouse testing for profile page](static/img/README/lighthouse2.png)
+### Products page
+![Screenshot of Lighthouse testing for profile page](media/README/all-products-lh.png)
+- Initially the accessibilty was in the orange, but I added the recommended ARIA labels and that fixed it.
 
-### Add a review page
-![Screenshot of Lighthouse testing for add review page](static/img/README/lighthouse3.png)
+### Products detail page
+![Screenshot of Lighthouse testing for profile page](media/README/product-detail-lh.png)
+- It flagged up the buttons that had symbols e.g. the + and - for the quantity, and also the search symbol. This is because they are not compatible with screen readers. I will look into this for future projects to avoid reducing accessibilty.
+
+### Bag page
+![Screenshot of Lighthouse testing for profile page](media/README/bag-lh.png)
+- Again, as above, it flagged up the buttons that had symbols because they are not compatible with screen readers. 
 
 
 ## Responsiveness
@@ -65,53 +71,41 @@ I utilised the [Lighthouse](https://developer.chrome.com/docs/lighthouse/overvie
 | All Pages | When viewing on smaller screens the navigation bar is displayed as a sidenav with a burger menu | Pass |
 | All Pages | When hovering over a link the pointer changes | Pass |
 | All Pages | The website is responsive on desktop, tablet and mobile | Pass |
-| Home page (Logged out) | url linked in README.md displays Fan of Scran homepage, and the Burger Favicon is visbile | Pass |
-| Home page (Logged out) | There is a main title and further information about purpose of site | Pass |
-| Home page (Logged out) | The register link takes you to the registration page | Pass |
-| Home page (Logged out + logged in)| The review accordian opens when clicked on and displays the review correctly | Pass |
-| Home page (Logged out + logged in)| The latest reviews displays the three most recent reviews in order | Pass |
-| Home page (Logged in) | The add a review link takes you to the new review page | Pass |
-| Home page (Logged in) | The browse reviews link takes you to the reviews page | Pass |
-| Home page (Logged in) | The log out link, takes the user to the home page and displays a flash message to confirm the user has logged out. | Pass |
-| Home page (Logged in) | The edit button on each review takes the user to the edit review page. A user is only allowed to edit their own reviews  | Pass |
-| Home page (Logged in) | The delete button on each review opens a modal asking if the user is sure that they want to delete that review, and then if the user selects delete again, the review is succesfully deleted and a flash message confirms this to the user. A user is only allowed to delete their own reviews, apart from Admin who can delete any reviews.  | Pass |
+| Home page | url linked in README.md displays Monstera&More homepage | Pass |
+| Home page | The register link takes you to the registration page | Pass |
+| Home page | The login link takes you to the login page | Pass |
 | Login page | The login page works succesfully and only allows registered users to login | Pass |
 | Login page | The password is hidden | Pass |
-| Login page | The login button takes the user to their profile page, and displays a flash message to welcome them | Pass |
-| Register page | The validation works for username and password length | Pass |
+| Login page | A success message is displayed when a user logs in | Pass |
 | Register page | The password is hidden  | Pass |
-| Register page | The register button takes the user to their profile page, and displays a flash message to say their registration was successful | Pass |
-| Profile page | The title of the page is the current users username  | Pass |
-| Profile page | Only reviews made by the current user are displayed, in order of when they were made (most recent first)  | Pass |
-| Profile page | The review accordian opens when clicked on and displays the review correctly | Pass |
-| Profile page | The edit button on each review takes the user to the edit review page  | Pass |
-| Profile page | The delete button on each review opens a modal asking if the user is sure that they want to delete that review, and then if the user selects delete again, the review is succesfully deleted and a flash message confirms this to the user  | Pass |
-| Review page | The add a review link takes you to the new review page | Pass |
-| Review page | The review accordian opens when clicked on and displays the review correctly | Pass |
-| Review page | All reviews are displayed, in order of when they were made (most recent first) | Pass |
-| Review page | The search function allows users to search for a review using either the restaurant name, location or rating | Pass |
-| Review page | The search function button displays all relevant reviews from the users search | Pass |
-| Review page | The clear search button returns the user back to all reviews | Pass |
-| Review page | If there are no reviews that match the users search, there will be a message to the user explaining this | Pass |
-| Review page | The edit button on each review takes the user to the edit review page. A user is only allowed to edit their own reviews   | Pass |
-| Review page | The delete button on each review opens a modal asking if the user is sure that they want to delete that review, and then if the user selects delete again, the review is succesfully deleted and a flash message confirms this to the user. A user is only allowed to delete their own reviews, apart from Admin who can delete any reviews. | Pass |
-| Cuisine page | Each cuisine card displayed has a relevant corresponding image and also the cuisine in the native language | Pass |
-| Cuisine page | Each cuisine card when clicked on displays the relevant cuisine page | Pass |
-| Specific cuisine page | The title of the page reflects the relevant cuisine | Pass |
-| Specific cuisine page | If there are no reviews of that cuisine, a message will be displayed explaining this | Pass |
-| Specific cuisine page | All reviews of that cuisine are displayed, in order of when they were made (most recent first)| Pass |
-| Specific cuisine page | The review accordian opens when clicked on and displays the review correctly | Pass |
-| Specific cuisine page | The edit button on each review takes the user to the edit review page. A user is only allowed to edit their own reviews | Pass |
-| Specific cuisine page | The delete button on each review opens a modal asking if the user is sure that they want to delete that review, and then if the user selects delete again, the review is succesfully deleted and a flash message confirms this to the user. A user is only allowed to delete their own reviews, apart from Admin who can delete any reviews. | Pass |
-| Add a review page | The page displays a form for the user to add a review | Pass |
-| Add a review page | Each text input works and validates successfully | Pass |
-| Add a review page | Each dropdown select works and validates successfully | Pass |
-| Add a review page | The submit review button successfully submits the form and displays a flash message to the user to confirm this. | Pass |
-| Edit review page | The page displays a form for the user to edit a review, and contains the relevant pre-filled fields within the form | Pass |
-| Edit review page | Each text input works and validates successfully | Pass |
-| Edit review page | Each dropdown select works and validates successfully | Pass |
-| Edit review page | The edit review button successfully submits the form and displays a flash message to the user to confirm that the form has been updated | Pass |
-
+| Register page |  A success message is displayed when a user registers | Pass |
+| Register page |  A confirmation email is sent | Pass |
+| Register page |  The link on the confirmation email works | Pass |
+| Logout page |  Clicking the link to logout brings up a page to ask 'Are you sure you want to logout?' | Pass |
+| Logout page |  If they choose to logout, a success message is displayed | Pass |
+| Profile page | The default delivery information is saved from previous sessions  | Pass |
+| Profile page | The default delivery information can be updated and a success message displays when it is succesfully updated | Pass |
+| Profile page | The order history for that user is displayed | Pass |
+| Products page | The user can search products in the navbar and the relevant products will be shown | Pass |
+| Products page | If there are no products matching the search, a link to browse products will be displayed | Pass |
+| Products page | All products displayed are relevant to the category selected | Pass |
+| Products page | The sort dropdown works correctly | Pass |
+| Product detail page | All the relevant information is displayed about each product | Pass |
+| Product detail page | The size can be selected for each product | Pass |
+| Product detail page | The user can add the product to the bag and a pop-up will appear showing the current bag total | Pass |
+| Bag page | A summary of the products in the users bag are dispalyed | Pass |
+| Bag page | A user can edit or delete products in the bag | Pass |
+| Bag page | A user can view the grand total and delivery cost breakdown, and a link to the checkout page is functioning correctly. | Pass |
+| Checkout page | A form is displayed to fill out delivery details and payment | Pass |
+| Checkout page | If a user is logged in and has ordered previously and selected 'save details' their details will be pre-filled | Pass |
+| Checkout page | Any incorrect details in the form for delivery or payment will be flagged up | Pass |
+| Checkout page | As the payment is processing an overlay with a loading symbol loads | Pass |
+| Checkout page | On successful payment the user will be taken to the checkout success page where an order summary is displayed | Pass |
+| Checkout page | On successful payment the user will be sent a confirmation email | Pass |
+| Community page | All blog posts are displayed, and a 'read' button is present to allow users to read more | Pass |
+| Community page | Only logged in users can add comments, if they are logged out the option to login will be dislayed | Pass |
+| Community page | Once a user has submitted a comment, a message will display informing them that admin have to approve and to check back later | Pass |
+| Community page | There is the option for an admin to delete a comment and this works | Pass |
 
 ### Browser compatibility
 The following browsers were used to check compatibility with the website
@@ -123,71 +117,73 @@ The following browsers were used to check compatibility with the website
 
 ### As a new user I want ...
 - To understand what the sites purpose is immediatley.
-    - The imagery, the site name and the heading all indicate the website is about food/restaurants. On Further reading it is clear the site is a restaurant review site. 
+    - The imagery, the site name and the text on the homepage all indicate the website is an e-commerce site selling houseplants. 
 
-![Screenshot of home page](static/img/README/user-homepage.png)
+![Screenshot of home page](media/README/us-home.png)
 
-- To be able to navigate to and use the registration page easily.
-    - From the initial home page there are three opportunities for a user to sign up and access the registration page. The registration page itself is straightforward and clear.
+- To be able to register to become a member, giving me the ability to leave comments on posts and save my delivery information.
+    - There are various points to prompt a user to register for an account including; 
+        - From any page when clicking on the 'My Account" link on the nav bar. 
+        - If a user wants to leave a comment, a message will be displayed to offer them to login or register.
+        - When a user is checking out beneath their delivery details form, there is an option to login or register to be able to save their details.
 
-![Screenshot of opportunity to sign up](static/img/README/user-signup1.png)
-![Screenshot of opportunity to sign up](static/img/README/user-signup2.png)
-![Screenshot of opportunity to sign up](static/img/README/user-signup3.png)
-![Screenshot of registration page](static/img/README/user-register.png)
+![Screenshot of registration page](media/README/us-register.png)
 
-- To easily navigate the site once logged in and start adding reviews.
-    - The navigation bar present once logged in is clear, and there are also opportunities when on other pages of the site to add reviews. 
+- To easily browse products, add items to my bag, checkout securely, and receive an email confirmation of my purchase.
+    - The navigation bar has lots of helpful links to specific pages depending on what the user wants to browse. Once a product has been selected there is a clear button to be able to add it to the shopping bag, and a pop-up appears showing the current bag and if you want to view the bag fully. The checkout app is facilitated by Stripe which is a secure payment system. An email confirmation is sent once a user has succesfully checkout out. 
 
-![Screenshot of navigation bar](static/img/README/user-nav.png)
-![Screenshot of navigation bar](static/img/README/user-add1.png)
-![Screenshot of navigation bar](static/img/README/user-add2.png)
+![Screenshot of navigation bar](media/README/us-nav-bar.png)
+![Screenshot of add to shopping bag button within product detail](media/README/us-add-button.png)
+![Screenshot of bag pop-up](media/README/us-bag-success.png)
+![Screenshot of email confirmation](media/README/us-email-confirm.png)
+
+- To be able to search the site to see if a certain product is available.
+    - Users can search the products on the site, it searches the title and the description of the product. If no searches are found a message will be displayed to indicate this. 
+
+![Screenshot of search for cactus, 3 products matching cactus are displayed](media/README/us-search.png)
+
+- To see if a particular product is out of stock 
+    - An out of stock message is displayed if the 'in stock' field for the product is set to 'no'. media/README/us-out-of-stock.png
+
+![Screenshot of product that is out of stock](media/README/us-out-of-stock.png)
 
 ### As a returning user I want ...
-- To be able to view my own restaurant reviews in order of when I made them.
-    - The profile page only displays reviews made by the user currently logged in and displays in order of most recently created.
+- To have my details saved so that checkout is quicker.
+    - If the user is logged in when checking out, their details will be saved and the form at checkout will be pre-filled. There is a tick box the user can tick if they want to save their details within the checkout form. 
 
-![Screenshot of profile page](static/img/README/user-profile.png)
+![Screenshot of checkout form, prefilled](media/README/us-details-saved.png)
 
-- To edit and delete my own reviews.
-    - A user is able to edit and delete their own reviews from any page where they can view reviews - home page, reviews page, cuisine page, and profile page. A user cannot edit or delete anothers reviews. The admin account can delete other reviews. As you can see below, when logged in as 'Bethany', I cannot edit or delete a review made by admin.
+- To be able to update my details if they have changed, e.g. address.
+    - A user is able to edit their details on their profile page. A success message will appear when a change has been saved. 
 
-![Screenshot of edit and delete options for users own review](static/img/README/user-own.png)
-![Screenshot of edit and delete options for another user review](static/img/README/user-notown.png)
-
-
-- To search reviews by restaurant name, location, and user.
-    - Below are some screenshots of searches for "Red", "Newcastle", and "Excellent"
-
-![Screenshot of search for "Red"](static/img/README/user-search.png)
-![Screenshot of search for "Newcastle"](static/img/README/user-search2.png)
-![Screenshot of search for "Excellent"](static/img/README/user-search3.png)
+![Screenshot of updating details on profile page](media/README/us-update-details.png)
+![Screenshot of success message of updating details](media/README/us-update-details-success.png)
 
 
-- To see the latest reviews on the home page.
-    - The home page displays the three latest reviews created.
+- To be able to view my order history, so if i want to order the same product again, i know exactly which one it was.
+    - Within the users profile they can view their order history
 
-![Screenshot of latest reviews](static/img/README/user-latest.png)
+![Screenshot of order history](media/README/us-order-history.png)
 
+### As the site owner I want ...
+- To be able to add, update and delete products.
+    - Admins can add products filling out the product form shown below. They can edit and delete products from the individual product itself. Success messages are displayed for all of these actions. 
 
-### As the website owner I want ...
-- To be able to login with an admin account and delete any reviews incase they are inappropriate or offensive
-    - Below is a screenshot demonstrating the ability of an admin to delete any reviews, they cannot edit reviews of other users.
-
-![Screenshot of admin ability to delete other user reviews](static/img/README/user-admin.png)
+![Screenshot of admin ability to add product](media/README/us-add-product-1.png)
+![Screenshot of admin ability to edit/delete product](media/README/us-edit-delete.png)
     
-- Provide 404 error page to redirect users back to the homepage
+- Provide 404 and 500 error page to redirect users back to the homepage
+    - Both 404 and 500 have been created, see a screenshot of the 404.html page below.
 
-![Screenshot of admin ability to delete other user reviews](static/img/README/user-404.png)
+![Screenshot of 404 error message](media/README/us-404.png)
 
-- Any external links (e.g. to our social media sites) to open in a new tab
-    - <code>target="_blank"</code> was added to each social media link so they open in a new tab
+- Approve any comments or posts before they are added.
+    - All comments need approving by the admin, once a commented is submitted the message shown below is displayed. 
 
-- Provide a secure registration/login for users
-    - The passwords are stored within the database as a hash so are secure
-    - Users cannot type in /profile/"username" to access another users profile
+![Screenshot of comment approval message](media/README/us-404.png)
 
-- To attract new users and retain existing users to create a site with more reviews 
-    - As this is just a concept and not a properly published game site, this cannot be measured. However friends and family said they like the idea and would use it.
+- To attract new users and retain existing users to ultimately sell more products.
+    - As this is just a concept and not a properly published site, this cannot be measured. However friends and family said they like the idea and would buy products from it if it was a real e-commerce site.
 
 ## Identified bugs
 - Bug: Rating drop down within the review form was not working
