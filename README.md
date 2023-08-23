@@ -202,6 +202,9 @@ A custom 500 error page was added, including a link to redirect back to the home
 
 ### Future features to consider
 
+#### Different prices for different sizes 
+Realistically larger sizes of the same plant would cost more, I couldn't manage to add this feature in but if it was to function as a real e-commerce site this would be important. 
+
 #### Community 
 The ability to attach images to blog posts and comments. Also for users to be able to delete their own comments, but obviously not others, as currently only the admin can delete comments. 
 

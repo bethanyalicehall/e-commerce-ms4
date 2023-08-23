@@ -92,7 +92,7 @@ I utilised the [Lighthouse](https://developer.chrome.com/docs/lighthouse/overvie
 | Products page | The sort dropdown works correctly | Pass |
 | Product detail page | All the relevant information is displayed about each product | Pass |
 | Product detail page | The size can be selected for each product | Pass |
-| Product detail page | The quantity can be updated by using the plus and minus buttons| Pass |
+| Product detail page | The quantity can be updated by using the plus and minus buttons and can't go below 1 or above 20 | Pass |
 | Product detail page | The user can add the product to the bag and a pop-up will appear showing the current bag total | Pass |
 | Bag page | A summary of the products in the users bag are dispalyed | Pass |
 | Bag page | A user can edit or delete products in the bag | Pass |
@@ -181,7 +181,7 @@ The following browsers were used to check compatibility with the website
 - Approve any comments or posts before they are added.
     - All comments need approving by the admin, once a commented is submitted the message shown below is displayed. 
 
-![Screenshot of comment approval message](media/README/us-404.png)
+![Screenshot of comment approval message](media/README/us-comment-approval.png)
 
 - To attract new users and retain existing users to ultimately sell more products.
     - As this is just a concept and not a properly published site, this cannot be measured. However friends and family said they like the idea and would buy products from it if it was a real e-commerce site.
