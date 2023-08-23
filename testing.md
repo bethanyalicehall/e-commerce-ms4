@@ -92,6 +92,7 @@ I utilised the [Lighthouse](https://developer.chrome.com/docs/lighthouse/overvie
 | Products page | The sort dropdown works correctly | Pass |
 | Product detail page | All the relevant information is displayed about each product | Pass |
 | Product detail page | The size can be selected for each product | Pass |
+| Product detail page | The quantity can be updated by using the plus and minus buttons| Pass |
 | Product detail page | The user can add the product to the bag and a pop-up will appear showing the current bag total | Pass |
 | Bag page | A summary of the products in the users bag are dispalyed | Pass |
 | Bag page | A user can edit or delete products in the bag | Pass |
