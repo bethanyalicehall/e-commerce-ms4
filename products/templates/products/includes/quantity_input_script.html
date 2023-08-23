@@ -1,4 +1,4 @@
-<script>
+<script type="text/javascript">
 
     /* 
     * Disable +/- buttons outside 1-99 range.
@@ -13,7 +13,7 @@
         }
 
         var minusDisabled = currentValue < 2;
-        var plusDisabled = currentValue > 20;
+        var plusDisabled = currentValue > 98;
 
         if (size) {
             $(`.decrement-size_${itemId}_${size}`).prop('disabled', minusDisabled);
