@@ -186,11 +186,11 @@ The following browsers were used to check compatibility with the website
     - As this is just a concept and not a properly published site, this cannot be measured. However friends and family said they like the idea and would buy products from it if it was a real e-commerce site.
 
 ## Identified bugs
-- Bug: Rating drop down within the review form was not working
-    - How I fixed it: I had two return statements within the add_review function, once I realised this and combined it into one, the drop down worked.
-- Bug: Each time when trying to edit a task, the cuisine would be pre-filled in the form as British, even if that is not what was previously selected when the review was added.
-    - How I fixed it: I had accidentally deleted the 'selected' component within the if statment, within the edit_review file, adding this back in fixed the issue.
-- Bug: Ordering reviews by date
-    - How I fixed it: Initially I tried to order the reviews by date by using <code>.sort(date_visited)</code>, however this did not work as the date_visited is a string, so it was ordering it by only day (1st, 4th, 10th etc.) and not taking into account month or year. To correct this I used <code>.sort(_id) -1</code>, which then ordered the reveiws showing the most recently made reviews first.
-- Bug: Footer jumping up to middle of the page when there was not content within the main section, (e.g. if a user had not yet made any reviews, this would occur on the profile page)
-    - How I fixed it: I added the following CSS from Materialize documentation.
+### Fixed bugs
+- Bug: The webhook was not connecting properly
+    - How I fixed it: I had copied the wrong key, I copied the public into the secret. Amending this fixed this. 
+- Bug: The card payment input field was not loading on the checkout page.
+    - How I fixed it: I noticed I had a spelling mistake in the public key, correcting this fixed the issue.
+### Unresolved bugs
+- Bug: If you have two sizes of the same plant, and delete one from your bag they both get deleted.
+ 
