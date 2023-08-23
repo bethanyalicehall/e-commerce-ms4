@@ -13,12 +13,11 @@ I inputted code into the W3C validation service and no errors were found
 ## JS validator
 
 I used [JSHint](https://jshint.com/).
-This gave some information of the following metrics, warnings and undefined variables. The warnings do not directly impact the functioning of the site or cause a console error.
-
+This gave some information of the following metrics, warnings and undefined variables. The warnings do not directly impact the functioning of the site or cause a console error. 
 ![Screenshot of metrics from JSHint](media/README/js-hint.png)
 
 ## Flake8 
-I ensured that my Python code was PEP8 compliant, I used Flake8 and corrected any linting errors within the IDE. I referred to [this site](https://peps.python.org/pep-0008/) to check some rules regarding indentation. For some files that I did not write myself as such, such as migration files I did not correct the errors of these. 
+I ensured that my Python code was PEP8 compliant, I used Flake8 and corrected any linting errors within the IDE. I referred to [this site](https://peps.python.org/pep-0008/) to check some rules regarding indentation. For some files that I did not write myself as such, such as migration files I did not correct the errors of these. There were also a few in settings.py but I did not want this to affect the functioning of Django Allauth. 
 
 ![Screenshot of Flake8 errors within the IDE](media/README/flake8.png)
 

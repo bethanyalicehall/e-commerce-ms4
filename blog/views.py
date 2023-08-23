@@ -21,11 +21,11 @@ def PostDetail(request, slug):
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
 
-            # Create Comment object but don't save to database yet
+            # Creates the Comment object
             new_comment = comment_form.save(commit=False)
-            # Assign the current post to the comment
+            # Assigns the post to the comment
             new_comment.post = post
-            # Save the comment to the database
+            # Saves the comment to the database
             new_comment.save()
     else:
         comment_form = CommentForm()
@@ -47,7 +47,7 @@ def add_post(request):
     """
     Add a new post to the blog
     """
-    # A new post can only be added by admin
+    # A message to say that posts can only be added by admin
     if not request.user.is_superuser:
         messages.error(request,
                        'Sorry, only store owners have access to the area.')
@@ -56,7 +56,7 @@ def add_post(request):
     if request.method == 'POST':
         blog_form = Form(request.POST, request.FILES)
         if blog_form.is_valid():
-            # Create Blog object
+            # Creates the Blog object
             blog = blog_form.save()
             messages.success(request, 'Successfully posted your blog.')
         else:
@@ -77,7 +77,7 @@ def add_post(request):
 @login_required
 def delete_comment(request, comment_id):
     """
-    Delete a comment posted by a user
+    Admin can delete a comment posted by a user
     """
     if not request.user.is_superuser:
         messages.error(request, 'Oops, only admin can do that.')
