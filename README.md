@@ -163,41 +163,31 @@ The font is from Google fonts
 
 ## Features
 
-### Parallax image container on home and reviews page
-The addition of this feature adds some dynamics to the site without being over the top. JQuery from Materialize was used to produce this.
-
 ### Register/login
-Users can register or login using a username and password. I utilized Werkzeug to generate a password hash for security. Users cannot register with a username that is already taken. Certain pages/features are only visible once logged in. When logged in there is a flash message to welcome the user.
-
-### Review Accordian
-The reviews are displayed within a collapsible, created from Materialize documentation. The header of the review displays the name of the restaurant and the location. There is also a face emoji which displays an emoji depending on the rating, this is tool-tipped so when hovering over the emoji it will display the rating e.g. "Excellent". The body of the review displays all the rest of the information the user has inputted and who the review was by. 
-
-### Latest Reviews
-On the home page the three most recently created reviews are displayed, this will update every time a new review is added.
-
-### Edit and Delete reviews
-The admin account can delete any reviews to allow monitoring of inappropriate or offensive reviews. A user can edit or delete any of their own reviews. When selecting to delete a review a modal will ask to confirm if the user is sure they want to delete. When a user chooses to edit a review, the same form will load as when they created their review but each data field will have the saved input displayed, and then the user can choose to just edit one field, and the original values of other fields will remain the same.
-
-### All reviews page including search bar
-This page displays all reviews, by all users. There is a seach bar where users can search reviews by restaurant, location or user. Within the search bar there is a clear button to clear the search.
-
-### Adding a new review page
-This page loads a form where users input review information, 
-
-### Cuisine page
-This page displays nine cards each of a different cuisine. The cuisine is titled in English and in the language from the country the cuisine is from. The image and text are linked to a page where reviews only from that cuisine will be displayed.
+Users can register or login using a username and password. Django Allauth was utilized to handle securely registering users. An alert will show if the password is not strong enough, and users must confirm their password twice. Users cannot register with a username that is already taken. Users must click the link in the confirmation email when registering. When logged in there is a success message to welcome the user.
 
 ### Profile page
-This page is titled 'username's reviews, and displays all of the reviews created by the user who is currently logged in.
+Logged in users can view their profile page. This displays their default delivery details in a form which can be edited and updated. Also displayed is any previous orders made by the user.
+
+### Products pages
+Users can view various pages including shop all, plants and plant accessories, each of these can then be viewed as separate categories or sorted by name, price, rating, or date added. 
+
+### Community page
+The community page displays blog posts created by admin, each post can be clicked on to view the full post. If logged in users can add comments. All comments need to be reviewed by admin before being published.
+
+### Deleting comments
+The admin account can delete any comments to allow monitoring. However all comments need to be approved by admin anyway but there may be a reason why they need to be deleted after publishing too. 
+
+### Adding, editing and deleting products
+The admin account can add new products using a form which also allows the upload of an image for the product. The same form can be loaded of an existing product where anything can be edited. There is a link within each product for the admin to edit or delete a product. Success messages are displayed when any of the aforementioned actions are taken. 
 
 ### Log out
-Within the navbar there is a link to click to log out, this takes the user back to the login page, and will flash a message to confirm to the user that they succesfully logged out.
+Within the navbar there is a link to click to log out, this then asks the user if they are sure they want to logout, and then will load a success message to confirm to the user that they succesfully logged out.
 
-### Footer
-The footer contains the brand logo, brief information about the site, copyright and links to social media which open in a new tab.
+### Search bar
+Users can search the products on the site, it searches the title and the description of the product. If no searches are found a message will be displayed to indicate this. 
 
 ### Accessibility
-- Alt attributes have been added to all images 
 - Text size, font and colour were considered in a way to hopefully provide clear, easy reading.
 - The Lighthouse report looks at accessibility, see [Testing](#testing) section for more information. 
 
